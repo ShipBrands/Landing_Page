@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShipBrands | شحن سريع وآمن لتجارتك</title>
+    
+    <!-- Google Fonts: Cairo (خط عصري وقوي للعربية) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 16px;
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.05);
+        }
+
+        /* --- قسم التتبع السريع (أعلى الصفحة) --- */
+        .tracking-section {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            margin: -16px -16px 20px -16px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        
+        .tracking-box {
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            margin-top: 15px;
+        }
+        
+        .tracking-box input {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            font-size: 16px;
+        }
+        
+        .tracking-box button {
+            width: 100%;
+            padding: 12px;
+            background: #fbbf24;
+            border: none;
+            border-radius: 15px;
+            font-weight: 900;
+            font-family: 'Cairo', sans-serif;
+            font-size: 18px;
+            color: #0f172a;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* --- الأيقونات والأقسام --- */
+        .hero-icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 900;
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #64748b;
+            font-size: 16px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 20px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .service-card {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        
+        .service-card span {
+            font-size: 35px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .why-us {
+            background: #fef3c7;
+            padding: 20px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background: #10b981;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: 800;
+            text-decoration: none;
+            margin-bottom: 10px;
+            box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+            transition: 0.3s;
+        }
+        
+        .cta-button.secondary {
+            background: white;
+            color: #0f172a;
+            border: 2px solid #0f172a;
+            box-shadow: none;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #94a3b8;
+            font-size: 12px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 15px 0;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- 1. أداة التتبع السريع -->
+        <div class="tracking-section">
+            <div style="font-weight: 600; font-size: 16px;">📦 تتبع شحنتك</div>
+            <div class="tracking-box">
+                <input type="text" placeholder="أدخل رقم التتبع هنا" id="trackNumber">
+                <button onclick="alert('سيتم ربط هذا لاحقاً بقاعدة البيانات')">🔍 تتبع الآن</button>
+            </div>
+        </div>
+
+        <!-- 2. العنوان الرئيسي -->
+        <div style="text-align: center;">
+            <div class="hero-icon">🚀</div>
+            <h1>شحن أسرع<br>أرباح أكثر</h1>
+            <p class="subtitle">
+                شريكك اللوجستي الأمثل. نحن نهتم بشحن منتجاتك لتركز أنت على تنمية متجرك. تغليف احترافي، توصيل سريع، وتتبع لحظي.
+            </p>
+        </div>
+
+        <!-- 3. شبكة الخدمات -->
+        <div class="services-grid">
+            <div class="service-card">
+                <span>📦</span> تغليف آمن
+            </div>
+            <div class="service-card">
+                <span>🚚</span> توصيل سريع
+            </div>
+            <div class="service-card">
+                <span>🌍</span> شحن دولي
+            </div>
+            <div class="service-card">
+                <span>🔄</span> إدارة مرتجعات
+            </div>
+        </div>
+
+        <!-- 4. لماذا تختارنا -->
+        <div class="why-us">
+            <h3 style="margin-bottom: 10px; color: #92400e;">⭐ لماذا ShipBrands؟</h3>
+            <p>✅ أسعار تنافسية بدون رسوم خفية</p>
+            <p>✅ دعم فني بالعربي على مدار الساعة</p>
+            <p>✅ تأمين شامل على جميع الطرود</p>
+            <p>✅ ربط تقني مع متجرك الإلكتروني</p>
+        </div>
+
+        <!-- 5. أزرار التواصل الحاسمة -->
+        <a href="https://wa.me/966500000000" target="_blank" class="cta-button">
+            💬 احصل على عرض سعر واتساب
+        </a>
+        <a href="tel:+966500000000" class="cta-button secondary">
+            📞 اتصل بنا الآن
+        </a>
+        
+        <!-- 6. شهادة عميل للثقة -->
+        <div style="text-align: center; margin-top: 20px; border: 1px dashed #cbd5e1; padding: 15px; border-radius: 20px;">
+            <p style="font-style: italic;">"ShipBrands غيرت لعبتنا، زادت مبيعاتنا لأن العملاء صاروا يثقون بسرعة التوصيل."</p>
+            <strong>- متجر الأناقة الإلكتروني</strong>
+        </div>
+
+        <!-- 7. تذييل وروابط التواصل -->
+        <div class="footer">
+            <div class="social-links">
+                <span>📘</span> <span>📸</span> <span>🎵</span>
+            </div>
+            <p>© 2026 ShipBrands. جميع الحقوق محفوظة.</p>
+            <p style="margin-top: 5px;">للتواصل: shipbrandsteam@gmail.com</p>
+        </div>
+    </div>
+
+</body>
+</html>
