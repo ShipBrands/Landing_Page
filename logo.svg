@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg-circle { fill: #ffffff; }
+      .outer-ring { fill: none; stroke: #4f778d; stroke-width: 12; }
+      .inner-ring { fill: none; stroke: #3bbea4; stroke-width: 8; }
+      .barcode { fill: #000000; }
+      .brand-text { font-family: 'Inter', 'Segoe UI', sans-serif; font-weight: 300; font-size: 58px; fill: #000000; letter-spacing: -1.5px; }
+    </style>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="250" cy="250" r="240" class="bg-circle" />
+  
+  <!-- Outer Double Ring -->
+  <circle cx="250" cy="250" r="230" class="outer-ring" />
+  <circle cx="250" cy="250" r="218" class="inner-ring" />
+  
+  <!-- Barcode Graphic -->
+  <g class="barcode">
+    <rect x="135" y="200" width="6" height="90" />
+    <rect x="146" y="200" width="10" height="90" />
+    <rect x="161" y="200" width="4" height="90" />
+    <rect x="170" y="200" width="14" height="90" />
+    <rect x="190" y="200" width="6" height="90" />
+    <rect x="201" y="200" width="12" height="90" />
+    <rect x="218" y="200" width="5" height="90" />
+    <rect x="228" y="200" width="16" height="90" />
+    <rect x="249" y="200" width="7" height="90" />
+    <rect x="261" y="200" width="4" height="90" />
+    <rect x="270" y="200" width="12" height="90" />
+    <rect x="287" y="200" width="6" height="90" />
+    <rect x="298" y="200" width="15" height="90" />
+    <rect x="318" y="200" width="5" height="90" />
+    <rect x="328" y="200" width="12" height="90" />
+    <rect x="345" y="200" width="6" height="90" />
+    <rect x="356" y="200" width="9" height="90" />
+  </g>
+  
+  <!-- Logo Typography -->
+  <text x="250" y="325" text-anchor="middle" class="brand-text">shipbrands</text>
+</svg>
